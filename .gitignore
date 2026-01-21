@@ -1,0 +1,23 @@
+# Exclude Large Data Files (Keep only necessary samples or output)
+daily_data.npz
+training_data_4h_engineered.csv
+# The user might want training_data.csv as it's the raw source, but if it's large, exclude it. 
+# It is 161KB, small enough to include.
+# final_processed_data.csv (if exists)
+
+# Python Caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+env/
+
+# IDE settings
+.vscode/
+.idea/
+
+# EXPLICITLY EXCLUDE VIDEO SCRIPT per user request
+Video_Script_Presentation.md
+video_script_presentation.md
